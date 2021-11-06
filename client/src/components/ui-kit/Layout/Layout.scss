@@ -1,0 +1,23 @@
+.app-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.app-footer {
+  text-align: center;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  margin-top: 64px;
+  height: 100vh;
+
+  .app-background {
+    padding: 24px;
+    height: 100%;
+  }
+}

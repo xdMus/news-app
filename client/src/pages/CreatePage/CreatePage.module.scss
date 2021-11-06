@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1280px;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  font-weight: bold;
+
+  input {
+    margin-top: 5px;
+  }
+}
+
+.editorContainer {
+  margin-top: 20px;
+  font-weight: bold;
+
+  > div {
+    margin-top: 10px;
+  }
+}
+
+.submitButton {
+  margin-top: 30px;
+}

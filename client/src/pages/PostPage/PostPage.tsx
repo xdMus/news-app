@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { getNewsPostById } from '../../api/newsPost';
 import { useParams, useRouteMatch } from 'react-router-dom';
 
 const PostPage = () => {
@@ -8,7 +7,7 @@ const PostPage = () => {
 
   const fetchData = async () => {
     const { id } = useParams<{ id: string }>();
-    const response = await getNewsPostById(id);
+    // const response = await getNewsPostById(id);
     // потом стейты привязать
   };
 

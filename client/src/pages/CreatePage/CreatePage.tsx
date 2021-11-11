@@ -3,7 +3,11 @@ import TextEditor from '../../components/ui-kit/TextEditor/TextEditor';
 import { convertToRaw, EditorState } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
 import { Button, Input } from 'antd';
-import { createNewsPost } from '../../api/newsPost';
+import {
+  createNewsPost,
+  getAllArticles,
+  getArticleById,
+} from '../../api/article';
 import styles from './CreatePage.module.scss';
 
 const CreatePage = () => {
@@ -58,6 +62,13 @@ const CreatePage = () => {
         className={styles.submitButton}
       >
         Create
+      </Button>
+      <Button
+        onClick={async () => {
+          await getArticleById('618b250f168151e9773b');
+        }}
+      >
+        Get
       </Button>
     </div>
   );
